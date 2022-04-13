@@ -1,1 +1,1 @@
-# CG-1
+# Computer Graphics part 1
