@@ -19,22 +19,51 @@ namespace CG_1
 
         private void Task_one_Click(object sender, EventArgs e)
         {
-            double k1, k2, b1, b2;
-            k1 = Convert.ToDouble(T_one_k1.Text);
-            k2 = Convert.ToDouble(T_one_k2.Text);
-            b1 = Convert.ToDouble(T_one_b1.Text);
-            b2 = Convert.ToDouble(T_one_b2.Text);
+            double A1, A2, B1, B2,C1,C2;
+            A1 = Convert.ToDouble(T_one_A1.Text);
+            A2 = Convert.ToDouble(T_one_A2.Text);
+            B1 = Convert.ToDouble(T_one_B1.Text);
+            B2 = Convert.ToDouble(T_one_B2.Text);
+            C1 = Convert.ToDouble(T_one_C1.Text);
+            C2 = Convert.ToDouble(T_one_C2.Text);
 
-            if (k1 == k2 && b1 == b2) {
+
+            if ((A1 == 0 && B1 == 0) || (A2 == 0 && B2 == 0)) {
+                T_one_answer.Text = "Некорректные данные.";
+                return;
+            }
+
+            if (A1 == 0 && A2 == 0 && (Math.Abs(C1 * B2 - C2 * B1) < 0.0000000001)) {
                 T_one_answer.Text = "Прямые совпадают.";
                 return;
             }
-            if (k1 == k2 && b1 != b2)
+
+            if (A1 == 0 && A2 == 0 && (Math.Abs(C1 * B2 - C2 * B1) > 0.0000000001))
             {
                 T_one_answer.Text = "Прямые не пересекаются.";
+                return;
             }
-            else
+
+            if (B1 == 0 && B2 == 0 && (Math.Abs(C1 * A2 - C2 * A1) < 0.0000000001)) {
+                T_one_answer.Text = "Прямые совпадают.";
+                return;
+            }
+
+            if (B1 == 0 && B2 == 0 && (Math.Abs(C1 * A2 - C2 * A1) > 0.0000000001))
             {
+                T_one_answer.Text = "Прямые не пересекаются.";
+                return;
+            }
+
+            if ((Math.Abs(A1 * B2 - B1 * A2) < 0.0000000001) && (Math.Abs(A1 * C2 - C1 * A2) < 0.0000000001)) {
+                T_one_answer.Text = "Прямые совпадают.";
+                return;
+            }
+
+            if (Math.Abs(A1 * B2 - B1 * A2) < 0.0000000001) {
+                T_one_answer.Text = "Прямые не пересекаются.";
+            }
+            else {
                 T_one_answer.Text = "Прямые пересекаются.";
             }
         }

@@ -35,8 +35,8 @@ namespace CG_1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.T_one_k1 = new System.Windows.Forms.TextBox();
-            this.T_one_b1 = new System.Windows.Forms.TextBox();
+            this.T_one_A1 = new System.Windows.Forms.TextBox();
+            this.T_one_B1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,8 +55,8 @@ namespace CG_1
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.T_one_k2 = new System.Windows.Forms.TextBox();
-            this.T_one_b2 = new System.Windows.Forms.TextBox();
+            this.T_one_A2 = new System.Windows.Forms.TextBox();
+            this.T_one_B2 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -115,6 +115,10 @@ namespace CG_1
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
+            this.T_one_C1 = new System.Windows.Forms.TextBox();
+            this.T_one_C2 = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Task_one
@@ -183,20 +187,20 @@ namespace CG_1
             this.label3.TabIndex = 5;
             this.label3.Text = "Задание №3  (В пространстве)";
             // 
-            // T_one_k1
+            // T_one_A1
             // 
-            this.T_one_k1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.T_one_k1.Location = new System.Drawing.Point(273, 139);
-            this.T_one_k1.Name = "T_one_k1";
-            this.T_one_k1.Size = new System.Drawing.Size(87, 21);
-            this.T_one_k1.TabIndex = 6;
+            this.T_one_A1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.T_one_A1.Location = new System.Drawing.Point(273, 139);
+            this.T_one_A1.Name = "T_one_A1";
+            this.T_one_A1.Size = new System.Drawing.Size(87, 21);
+            this.T_one_A1.TabIndex = 6;
             // 
-            // T_one_b1
+            // T_one_B1
             // 
-            this.T_one_b1.Location = new System.Drawing.Point(273, 166);
-            this.T_one_b1.Name = "T_one_b1";
-            this.T_one_b1.Size = new System.Drawing.Size(87, 22);
-            this.T_one_b1.TabIndex = 9;
+            this.T_one_B1.Location = new System.Drawing.Point(273, 166);
+            this.T_one_B1.Name = "T_one_B1";
+            this.T_one_B1.Size = new System.Drawing.Size(87, 22);
+            this.T_one_B1.TabIndex = 9;
             // 
             // label4
             // 
@@ -356,55 +360,55 @@ namespace CG_1
             this.label21.TabIndex = 39;
             this.label21.Text = "y3 =";
             // 
-            // T_one_k2
+            // T_one_A2
             // 
-            this.T_one_k2.Location = new System.Drawing.Point(421, 139);
-            this.T_one_k2.Name = "T_one_k2";
-            this.T_one_k2.Size = new System.Drawing.Size(87, 22);
-            this.T_one_k2.TabIndex = 41;
+            this.T_one_A2.Location = new System.Drawing.Point(421, 139);
+            this.T_one_A2.Name = "T_one_A2";
+            this.T_one_A2.Size = new System.Drawing.Size(87, 22);
+            this.T_one_A2.TabIndex = 41;
             // 
-            // T_one_b2
+            // T_one_B2
             // 
-            this.T_one_b2.Location = new System.Drawing.Point(422, 166);
-            this.T_one_b2.Name = "T_one_b2";
-            this.T_one_b2.Size = new System.Drawing.Size(87, 22);
-            this.T_one_b2.TabIndex = 42;
+            this.T_one_B2.Location = new System.Drawing.Point(422, 166);
+            this.T_one_B2.Name = "T_one_B2";
+            this.T_one_B2.Size = new System.Drawing.Size(87, 22);
+            this.T_one_B2.TabIndex = 42;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(237, 142);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(29, 15);
+            this.label22.Size = new System.Drawing.Size(36, 15);
             this.label22.TabIndex = 44;
-            this.label22.Text = "k1 =";
+            this.label22.Text = "A1 = ";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(235, 169);
+            this.label23.Location = new System.Drawing.Point(237, 169);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(30, 15);
+            this.label23.Size = new System.Drawing.Size(34, 15);
             this.label23.TabIndex = 45;
-            this.label23.Text = "b1 =";
+            this.label23.Text = "B1 = ";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(385, 169);
+            this.label26.Location = new System.Drawing.Point(386, 169);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(30, 15);
+            this.label26.Size = new System.Drawing.Size(31, 15);
             this.label26.TabIndex = 48;
-            this.label26.Text = "b2 =";
+            this.label26.Text = "B2 =";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(386, 142);
+            this.label27.Location = new System.Drawing.Point(384, 143);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(29, 15);
+            this.label27.Size = new System.Drawing.Size(33, 15);
             this.label27.TabIndex = 49;
-            this.label27.Text = "k2 =";
+            this.label27.Text = "A2 =";
             // 
             // T_one_answer
             // 
@@ -848,11 +852,47 @@ namespace CG_1
             this.label48.TabIndex = 104;
             this.label48.Text = "A ";
             // 
+            // T_one_C1
+            // 
+            this.T_one_C1.Location = new System.Drawing.Point(273, 194);
+            this.T_one_C1.Name = "T_one_C1";
+            this.T_one_C1.Size = new System.Drawing.Size(87, 22);
+            this.T_one_C1.TabIndex = 107;
+            // 
+            // T_one_C2
+            // 
+            this.T_one_C2.Location = new System.Drawing.Point(421, 194);
+            this.T_one_C2.Name = "T_one_C2";
+            this.T_one_C2.Size = new System.Drawing.Size(87, 22);
+            this.T_one_C2.TabIndex = 108;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(386, 197);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(31, 15);
+            this.label49.TabIndex = 109;
+            this.label49.Text = "C2 =";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(237, 197);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(31, 15);
+            this.label50.TabIndex = 110;
+            this.label50.Text = "C1 =";
+            // 
             // LW_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1083, 904);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.label49);
+            this.Controls.Add(this.T_one_C2);
+            this.Controls.Add(this.T_one_C1);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.label47);
             this.Controls.Add(this.label48);
@@ -911,8 +951,8 @@ namespace CG_1
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.T_one_b2);
-            this.Controls.Add(this.T_one_k2);
+            this.Controls.Add(this.T_one_B2);
+            this.Controls.Add(this.T_one_A2);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
@@ -931,8 +971,8 @@ namespace CG_1
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.T_one_b1);
-            this.Controls.Add(this.T_one_k1);
+            this.Controls.Add(this.T_one_B1);
+            this.Controls.Add(this.T_one_A1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -956,8 +996,8 @@ namespace CG_1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox T_one_k1;
-        private System.Windows.Forms.TextBox T_one_b1;
+        private System.Windows.Forms.TextBox T_one_A1;
+        private System.Windows.Forms.TextBox T_one_B1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -976,8 +1016,8 @@ namespace CG_1
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox T_one_k2;
-        private System.Windows.Forms.TextBox T_one_b2;
+        private System.Windows.Forms.TextBox T_one_A2;
+        private System.Windows.Forms.TextBox T_one_B2;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label26;
@@ -1036,6 +1076,10 @@ namespace CG_1
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox T_one_C1;
+        private System.Windows.Forms.TextBox T_one_C2;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
     }
 }
 
