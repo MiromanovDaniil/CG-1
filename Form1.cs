@@ -80,7 +80,7 @@ namespace CG_1
             y3 = Convert.ToDouble(T_two_y3.Text);
             y4 = Convert.ToDouble(T_two_y4.Text);
 
-            if (((y3 - y1) / (y2 - y1) == (x3 - x1) / (x2 - x1)) && ((y4 - y1) / (y2 - y1) == (x4 - x1) / (x2 - x1))) {
+            if ((Math.Abs((y3 - y1) * (x2 - x1) - (x3 - x1) * (y2 - y1)) < 0.0000000001) && (Math.Abs((y4 - y1) * (x2 - x1) - (x4 - x1) * (y2 - y1)) < 0.0000000001)) {
 
                 if ((x3 < x1 && x3 < x2) && (x4 < x1 && x4 < x2) && (x1 < x2)) {
                     T_two_answer.Text = "Луч AB и отрезок CD не пересекаются.";
@@ -153,7 +153,7 @@ namespace CG_1
             z2 = Convert.ToDouble(T_four_z2.Text);
             z3 = Convert.ToDouble(T_four_z3.Text);
 
-            if ((((x3 - x1) / (x2 - x1)) == ((y3 - y1) / (y2 - y1))) && ( ((x3 - x1) / (x2 - x1)) == ((z3 - z1) / (z2 - z1))))
+            if ((Math.Abs((x3 - x1) * (y2 - y1) - (y3 - y1) * (x2 - x1)) < 0.0000000001) && (Math.Abs((x3 - x1) * (z2 - z1) - (z3 - z1) * (x2 - x1)) < 0.0000000001))
             {
                 T_four_answer.Text = "Точки лежат на одной прямой.";
             }
